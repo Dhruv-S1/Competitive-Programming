@@ -35,7 +35,7 @@ long long query(long long x, long long y, long long z)
 
 }
 
-// lesson learned, watch out for what variables I am using for query, debug time around 2 hours... Also for loop works for BIT while loop not needed.
+
 int main()
 {
     cin.sync_with_stdio(0);
