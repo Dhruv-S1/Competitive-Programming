@@ -1,4 +1,14 @@
-BITTree , n , i ,v):
+import sys
+
+def getsum(BITTree,i):
+    s = 0
+    i = i+1
+    while i > 0:
+        s += BITTree[i]
+        i -= i & (-i)
+    return s
+
+def updatebit(BITTree , n , i ,v):
     i += 1
     while i <= n:
         BITTree[i] += v
