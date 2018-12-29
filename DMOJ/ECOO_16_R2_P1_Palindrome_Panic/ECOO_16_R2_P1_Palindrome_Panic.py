@@ -1,3 +1,4 @@
+# NOTE: This partial solution gives 80/100 points
 for i in range(10):
     y = raw_input()
     if y == y[::-1]:
