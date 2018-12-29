@@ -10,6 +10,7 @@ struct node
     long long right;
 }a[500002];
 
+// NOTE: This partial solution gives 42/90 points
 
 int main()
 {
