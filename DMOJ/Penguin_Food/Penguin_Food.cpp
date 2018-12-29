@@ -5,6 +5,9 @@
 using namespace std;
 vector<long long> a;
 long long segtree[3000005][4];
+
+//NOTE: This partial solution only gives 65/100 points
+
 long long findmax(long long num1, long long num2,long long num3,long long num4)
 {
     int curmax = num1;
