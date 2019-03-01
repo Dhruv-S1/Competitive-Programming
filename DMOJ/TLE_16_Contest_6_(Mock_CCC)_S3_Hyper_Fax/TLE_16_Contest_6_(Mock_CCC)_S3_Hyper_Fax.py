@@ -1,5 +1,7 @@
 global x
 import sys
+# NOTE: This is a partial solution and only yields 8/15 points 
+
 sys.setrecursionlimit(1000000000)
 x = input()
 a = []
