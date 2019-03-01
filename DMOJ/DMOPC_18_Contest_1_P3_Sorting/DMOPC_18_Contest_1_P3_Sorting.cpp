@@ -1,6 +1,9 @@
 #include <iostream>
 #include<set>
 #include<vector>
+
+//NOTE this partial solution only yields 60/100 points.
+
 using namespace std;
 int  n, m, t, j, hold1;
 int a[202];
