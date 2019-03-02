@@ -1,6 +1,6 @@
 import sys
 
-# NOTE this partial solution yields 50/100 points
+#NOTE this partial solution yields 50/100 points
 
 for i in xrange(10):
     x = input()
