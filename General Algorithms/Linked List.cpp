@@ -25,7 +25,8 @@ void traverse (Node* linkedlist)
 }
 
 
-// Reverses a linkedlist.
+// Reverses a linkedlist using a three pointer approach.
+// See: https://www.geeksforgeeks.org/reverse-a-linked-list/  for details. 
 // Node -> Node
 
 Node* reverse (Node* linkedlist)
