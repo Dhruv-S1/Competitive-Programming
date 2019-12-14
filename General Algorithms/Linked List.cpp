@@ -30,7 +30,7 @@ void traverse (Node* linkedlist)
 
 Node* reverse (Node* linkedlist)
 {
-	Node* prev;
+    Node* prev;
     Node* curr;
     Node* next;
     curr = linkedlist;
@@ -47,7 +47,7 @@ Node* reverse (Node* linkedlist)
 
 int main()
 {
-	// Creating a sample linkedlist.
+    // Creating a sample linkedlist.
     Node* head = NULL;
     Node* second = NULL;
     Node* third = NULL;
