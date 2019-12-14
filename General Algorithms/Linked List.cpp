@@ -66,5 +66,4 @@ int main()
     third->next = NULL;
 
     traverse(reverse(head));
-    
 }
