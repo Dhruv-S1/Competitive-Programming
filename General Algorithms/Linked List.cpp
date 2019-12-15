@@ -77,6 +77,35 @@ Node* insert (Node* linkedlist, Node* node, int pos)
 	
 }
 
+
+// Deletes the node in the nth position
+//  in the linked listed
+// deleteNode: Int Node -> Node
+
+Node* deleteNode(int pos, Node* node)
+{
+	Node* head = node;
+	int counter = 0;
+	if(pos == 0){
+		Node* temp = node->next;
+		free(node);
+		return temp;
+	}
+
+		
+	while(true){
+		if(pos-1==counter){
+			node->next = node->next->next;
+			free(node->next);
+			break;
+		}
+		counter+=1;
+		node = node->next;
+		
+	}
+	return head;
+}
+
 int main()
 {
 	// Creating a sample linkedlist.
@@ -102,6 +131,8 @@ int main()
     fourth->data = 20;
     
 	
-    traverse(reverse(insert(head, fourth, 2)));
+
+
+    traverse(deleteNode(2, head));
     
 }
