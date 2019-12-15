@@ -1,4 +1,4 @@
-#Link to solution: https://leetcode.com/problems/container-with-most-water/
+#Link to problem: https://leetcode.com/problems/container-with-most-water/
 class Solution(object):
     def maxArea(self, height):
         maxright = {}
