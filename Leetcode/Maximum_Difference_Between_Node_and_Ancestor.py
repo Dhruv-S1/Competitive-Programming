@@ -11,18 +11,18 @@ class Solution:
             if(node.left == None and node.right == None):
                 return [node.val, node.val]
             elif(node.left == None):
-                min1 = min(recurse(node.right)[0], node.val)
-                max1 = recurse(node.right)[1]
-                print(max1, min1)
+                temp = recurse(node.right)
+                min1 = min(temp[0], node.val)
+                max1 = max(temp[1], node.val)
                 ans[0] = max(max(abs(node.val - min1), abs(node.val - max1)), ans[0])
             elif(node.right == None):
-                min1 = recurse(node.left)[0]
-                max1 = recurse(node.left)[1]
+                temp = recurse(node.left)
+                min1 = min(temp[0], node.val)
+                max1 = max(temp[1], node.val)
                 ans[0] = max(max(abs(node.val - min1), abs(node.val - max1)), ans[0])
             else:
-                print(node.val)
-                min1 = min(recurse(node.left)[0], recurse(node.right)[0])
-                max1 = max(recurse(node.left)[1], recurse(node.right)[1])
+                min1 = min(recurse(node.left)[0], recurse(node.right)[0], node.val)
+                max1 = max(recurse(node.left)[1], recurse(node.right)[1], node.val)
                 ans[0] = max(max(abs(node.val - min1), abs(node.val - max1)), ans[0])
             return [min1, max1]
         recurse(root);
